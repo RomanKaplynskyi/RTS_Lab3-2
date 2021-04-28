@@ -1,16 +1,4 @@
-# flutter_application_1
+# Additional task for Lab3_2
+![image](https://user-images.githubusercontent.com/43010982/116403612-746e0600-a836-11eb-8ac1-1858fa933600.png)
+В результаті проведення обчислень з різною швидкістю навчання, можна помітити тенденцію, що при збільшенні швидкості навчання час виконання програми зменшується. Це представлено на малюнку вище.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
