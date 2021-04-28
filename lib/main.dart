@@ -267,17 +267,31 @@ class _State extends State<MyApp> {
                             ? timeDeadLineDropDown.value.time
                             : -1.0;
                     var radioButtonValue = _character.index;
-                    var content = radioButtonValue == 0
+                    /*var content = radioButtonValue == 0
                         ? count(
                             learningSpeed: learningSpeedDropDownValue,
                             deadlineTime: timeDeadLineDropDownValue)
                         : count(
                             learningSpeed: learningSpeedDropDownValue,
-                            itterationCount: iterationDropDownValue);
+                            itterationCount: iterationDropDownValue);*/
+                    var content1 =
+                        count(learningSpeed: 0.001, itterationCount: 10000);
+                    var content2 =
+                        count(learningSpeed: 0.01, itterationCount: 10000);
+                    var content3 =
+                        count(learningSpeed: 0.015, itterationCount: 10000);
+                    var content4 =
+                        count(learningSpeed: 0.03, itterationCount: 10000);
+                    var content5 =
+                        count(learningSpeed: 0.05, itterationCount: 10000);
+
                     var dialog = AlertDialog(
                       title: Text("Result"),
-                      content: new Text(
-                          "W1: ${content[0].toString()}\nW2: ${content[1].toString()}\nTime: ${content[2].toString()}\nIterations: ${content[3].toString()}"),
+                      content: new Text("LearningSpeed: 0.001 -----\nW1: ${content1[0].toString()}\nW2: ${content1[1].toString()}\nTime: ${content1[2].toString()}\nIterations: ${content1[3].toString()};\n\n" +
+                          "LearningSpeed: 0.01 -----\nW1: ${content2[0].toString()}\nW2: ${content2[1].toString()}\nTime: ${content2[2].toString()}\nIterations: ${content2[3].toString()};\n\n" +
+                          "LearningSpeed: 0.015 -----\nW1: ${content3[0].toString()}\nW2: ${content3[1].toString()}\nTime: ${content3[2].toString()}\nIterations: ${content3[3].toString()};\n\n" +
+                          "LearningSpeed: 0.03 -----\nW1: ${content4[0].toString()}\nW2: ${content4[1].toString()}\nTime: ${content4[2].toString()}\nIterations: ${content4[3].toString()};\n\n" +
+                          "LearningSpeed: 0.05 -----\nW1: ${content5[0].toString()}\nW2: ${content5[1].toString()}\nTime: ${content5[2].toString()}\nIterations: ${content5[3].toString()};\n\n"),
                       actions: <Widget>[
                         new TextButton(
                           child: new Text('OK'),
